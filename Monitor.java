@@ -5,10 +5,10 @@ class Monitor {
         this.count = 0;
     }
 
-    // Simple method to increment the count
-    public void increment() {
-        count++;
-        System.out.println("Count incremented: " + count);
+    // Increment by a specific value
+    public void increment(int value) {
+        count += value;
+        System.out.println("Count incremented by " + value + ": " + count);
     }
 
     // Simple method to get the current count
@@ -18,7 +18,7 @@ class Monitor {
 
     public static void main(String[] args) {
         Monitor monitor = new Monitor();
-        monitor.increment();
+        monitor.increment(5);  // Increment by 5
         System.out.println("Current count: " + monitor.getCount());
     }
 }
